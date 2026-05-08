@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copiar Currículo</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Currículo Pronto</h1>
+            <p>Clique no botão abaixo para copiar o texto do currículo para a sua área de transferência.</p>
+        </header>
+
+        <main>
+            <div class="resume-preview">
+                <div class="resume-header">
+                    <div class="dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <span class="file-name">curriculo.txt</span>
+                </div>
+                <div class="resume-content" id="resumeText"></div>
+            </div>
+
+            <button id="copyBtn" class="copy-button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 1H4C2.9 1 2 1.9 2 3V17H4V3H16V1ZM19 5H8C6.9 5 6 5.9 6 7V21C6 22.1 6.9 23 8 23H19C20.1 23 21 22.1 21 21V7C21 5.9 20.1 5 19 5ZM19 21H8V7H19V21Z" fill="currentColor"/>
+                </svg>
+                Copiar Texto
+            </button>
+        </main>
+    </div>
+
+    <div id="toast" class="toast">Texto copiado com sucesso!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>
